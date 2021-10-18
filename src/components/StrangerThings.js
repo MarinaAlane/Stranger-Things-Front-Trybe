@@ -119,6 +119,7 @@ class StrangerThings extends React.Component {
               Mudar de Realidade
             </button>
           </div>
+          {/* req 9 */}
           <p>Em desenvolvimento</p>
           <div>
             <input
