@@ -110,7 +110,7 @@ class StrangerThings extends React.Component {
   }
 
   developmentEnv() {
-    if (!REACT_DEVELOPMENT_ENV === true) {
+    if (!!REACT_DEVELOPMENT_ENV === true) {
       return <h1>Em desenvolvimento</h1>;
     }
     return '';
