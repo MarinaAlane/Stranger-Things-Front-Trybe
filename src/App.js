@@ -4,9 +4,7 @@ import './App.css';
 import StrangerThings from './components/StrangerThings';
 import DevelopmentEnv from './components/InDevelopment';
 
-require('dotenv').config();
-
-const { IN_DEVELOPMENT } = process.env;
+const { href } = document.location;
 
 console.log({ IN_DEVELOPMENT });
 console.log(process.env);
@@ -14,7 +12,7 @@ console.log(process.env);
 function App() {
   return (
     <div className="App">
-      { IN_DEVELOPMENT === true ? <DevelopmentEnv /> : '' }
+      { href === 'https://igmriegel-ft.herokuapp.com/' ? <DevelopmentEnv /> : '' }
       <StrangerThings />
     </div>
   );
