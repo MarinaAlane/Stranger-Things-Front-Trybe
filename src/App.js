@@ -7,7 +7,7 @@ import DevelopmentEnv from './components/InDevelopment';
 function App() {
   return (
     <div className="App">
-      { process.env.IN_DEVELOPMENT ? <DevelopmentEnv /> : '' }
+      { process.env.IN_DEVELOPMENT === 'true' ? <DevelopmentEnv /> : '' }
       <StrangerThings />
     </div>
   );
