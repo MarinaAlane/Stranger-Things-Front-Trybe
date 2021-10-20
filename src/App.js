@@ -6,8 +6,7 @@ import DevelopmentEnv from './components/InDevelopment';
 
 const { href } = document.location;
 
-console.log({ IN_DEVELOPMENT });
-console.log(process.env);
+console.log(href);
 
 function App() {
   return (
