@@ -117,7 +117,7 @@ class StrangerThings extends React.Component {
         )}` }
       >
         { process.env.REACT_APP_DEV_MODE && (
-          <h2>Em desenvolvimento</h2>
+          <p>Em desenvolvimento</p>
         ) }
         <div className="content strangerfy">
           <div className="change-reality">
